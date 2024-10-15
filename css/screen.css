@@ -135,8 +135,8 @@ header #header-beta {
 }
 
 #image-global .inner{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     mask-repeat: no-repeat;
     mask-size: 100%;
     background: red;
