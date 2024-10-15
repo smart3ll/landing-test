@@ -1,0 +1,228 @@
+:root {
+    /* colours initialization */
+    --color-bg: #000000;
+    --color-accent: #FFFFFF;
+    --color-link: #44b1ff;
+    --color-link-hover: #8bcfff;
+    --color-white: rgba(255,255,255,0.25);
+    --color-UI: rgba(255,255,255,0.40);
+    --color-blue: #0095FF;
+
+    /* text color pallete */
+    --color-font-primary: #fff;
+    --color-icon: #d4d4d5;
+
+    /* element color pallete */
+    --color-featured-bg:#252529;
+    --color-glow: rgba(255,255,255,0.15);
+    
+    /* logo */
+    --logo: url("../images/NEXUS_logo+wordmark_horizontal-white.svg");
+}
+
+:root {
+    /* font style */
+    --font-family-title: "Lato", sans-serif;
+    --font-family-body: "Lato", sans-serif;
+}
+
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    background: center / contain no-repeat url("../images/bg.png") var(--color-bg);
+    background-size: cover;
+    color: var(--color-accent);
+    font-family: var(--font-family-body);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a { 
+    color: var(--color-UI);
+    text-decoration: none; 
+    
+    -webkit-transition: all 0.3s; 
+       -moz-transition: all 0.3s; 
+        -ms-transition: all 0.3s; 
+         -o-transition: all 0.3s; 
+            transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+    outline: 0;
+}
+
+#header-title {
+    color: var(--color-accent);
+}
+
+footer #footer-left .logged-in {
+    color: var(--color-accent);
+    margin-right: 8px;
+}
+
+footer, header {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-UI);
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header #header-title, header #header-beta {
+    display: flex;
+    padding: 40px;
+    flex: auto;
+}
+
+header #header-title {
+    justify-content: center;
+    gap: 48px;
+    letter-spacing: 1.5px;
+    margin-right: -128px;
+    width: auto;
+}
+
+header #header-beta {
+    justify-content: flex-end;
+    letter-spacing: 1.5px;
+    max-width: 64px;
+    gap: 48px;
+}
+
+
+#container {
+    display: flex;
+    height: calc(100vh - 20vh);
+    width: auto;
+    justify-content:center;
+    margin: 10vh 10vw;
+    margin-top: 128px;
+    align-content: center;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    min-height: 700px;
+    gap: 64px;
+}
+
+#image-global {
+    
+    width: 100%;
+    height: auto;
+    min-width: 480px;
+    aspect-ratio: 16 / 9;
+    justify-content: center;
+}
+
+#image-global .inner{
+    width: 200px;
+    height: 200px;
+    background: red;
+    clip-path: url(#map);
+    
+}
+
+#app-stats, #app-branding, #app-network-stats {
+    min-width: 480px;
+    justify-content: center;
+}
+
+#app-stats {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-between;
+    
+}
+
+#app-stat-local, #app-stat-nexus, #app-stat-total {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.app-stat-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.app-stat-number {
+    font-size: 4vw;
+}
+
+#app-branding {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    gap: 48px;
+}
+
+#app-branding img {
+    width: 320px;
+}
+
+#app-branding img, #app-branding button{
+    margin: 0px auto;
+}
+
+#app-branding button img{
+    width: 24px;
+}
+
+footer {
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0,0,0,0.4);
+}
+
+footer  #footer-left, footer  #footer-right  {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    flex: 1;
+}
+
+footer  #footer-right  {
+    justify-content: flex-end;
+    align-items: center;
+    letter-spacing: 1.5px;
+    gap: 48px;
+}
+
+footer  #footer-right img {
+    opacity: 0.4;
+    height: 24px;
+    width: 24px;
+}
+
+footer  #footer-right img:hover {
+    opacity: 1;
+}
