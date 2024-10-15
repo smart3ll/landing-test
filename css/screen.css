@@ -131,6 +131,7 @@ header #header-beta {
     height: auto;
     min-width: 480px;
     aspect-ratio: 16 / 9;
+    background: blue;
     justify-content: center;
 }
 
