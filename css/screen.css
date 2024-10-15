@@ -140,8 +140,7 @@ header #header-beta {
 
 #image-global .inner{
     width: 100%;
-    height: auto;
-    
+    height: 100%;
 }
 
 #app-stats, #app-branding, #app-network-stats {
