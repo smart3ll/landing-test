@@ -127,7 +127,6 @@ header #header-beta {
 }
 
 #image-global {
-    
     width: 100%;
     height: auto;
     min-width: 480px;
@@ -140,10 +139,8 @@ header #header-beta {
     height: 200px;
     mask-repeat: no-repeat;
     mask-size: 100%;
-
     background: red;
-    mask-image: url(../images/map.png);
-    
+    mask-image: url(../images/map.svg);
 }
 
 #app-stats, #app-branding, #app-network-stats {
