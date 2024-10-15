@@ -138,8 +138,11 @@ header #header-beta {
 #image-global .inner{
     width: 200px;
     height: 200px;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+
     background: red;
-    clip-path: url(#map);
+    mask-image: url(../images/map.png);
     
 }
 
