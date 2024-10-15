@@ -140,7 +140,7 @@ header #header-beta {
     mask-repeat: no-repeat;
     mask-size: 100%;
     background: red;
-    mask-image: url(../images/map.svg);
+    mask-image: url(../images/map.png);
 }
 
 #app-stats, #app-branding, #app-network-stats {
