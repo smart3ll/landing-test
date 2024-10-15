@@ -134,7 +134,7 @@ header #header-beta {
     background: blue;
     justify-content: center;
     mask-repeat: no-repeat;
-    mask-size: 100%;
+    mask-size: contain;
     mask-image: url(../images/map.png);
 }
 
