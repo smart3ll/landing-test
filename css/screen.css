@@ -134,9 +134,9 @@ header #header-beta {
     aspect-ratio: 16 / 9;
     background: blue;
     justify-content: center;
-    mask-repeat: no-repeat;
+    /* mask-repeat: no-repeat;
     mask-size: contain;
-    mask-image: url(../images/map.png);
+    mask-image: url(../images/map.png); */
 }
 
 #app-stats, #app-branding, #app-network-stats {
