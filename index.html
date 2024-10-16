@@ -15,6 +15,47 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <script>
+        
+            var user = 'nexus-xyz';
+            var repo = 'nexus-zkvm';
+
+            // get data
+            var callbackName = 'ghButtonCallback' + Math.floor( Math.random() * 10000 );
+            var button = document.querySelector('.gh-button');
+
+            window[ callbackName ] = function( response ) {
+              var starText = addCommas( response.data.stargazers_count );
+              button.querySelector('.gh-button__stat__text').textContent = starText;
+            }
+
+            function addCommas( num ) {
+              return new String( num ).replace( /(\d)(?=(\d{3})+$)/g, '$1,' );
+            }
+
+            var script = document.createElement('script');
+            script.src = 'https://api.github.com/repos/' + user + '/' + repo + '?callback=' + callbackName;
+            document.head.appendChild( script );
+            
+        </script>
+        
+        <style>
+        
+            .gh-button__icon {
+              height: 20px;
+              fill: #333;
+              display: inline-block;
+              vertical-align: bottom;
+            }
+
+            .gh-button__stat {
+              border-left: 0;
+              border-radius: 0 4px 4px 0;
+              background: none;
+            }
+            
+        </style>
     
     </head>
 
@@ -55,8 +96,16 @@
             </div>
             
             <div id="image-global">
-                <div class="inner">
-                </div>
+                
+                <a class="gh-button" href="#">
+                  <span class="gh-button__stat">
+                    <svg class="gh-button__icon gh-button__icon--star" viewbox="0 0 896 1024">
+                      <path d="M896 384l-313.5-40.781L448 64 313.469 343.219 0 384l230.469 208.875L171 895.938l277-148.812 277.062 148.812L665.5 592.875 896 384z" />
+                    </svg>
+                    <span class="gh-button__stat__text">4,500</span>
+                  </span>
+                </a>
+                
             </div>
             
             
